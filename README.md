@@ -1,97 +1,88 @@
-Book Bibliography and CSV Processor 📚
-A Java-based system for processing and validating bibliographic data and CSV files with format conversion and error handling capabilities.
-Project Overview
-This project consists of two main components:
+📚 Book Bibliography and CSV Processor
 
-A Bibliography Factory that converts bibliography files into different citation formats (IEEE, ACM, NJ)
-A CSV processor for book records with validation and categorization features
+🚀 A powerful Java-based system for transforming your bibliographic data into multiple formats!
 
-Features
-Bibliography Factory
+🎯 Project Overview
+Transform your bibliography chaos into organized excellence with our dual-component system:
 
-Converts source files into three citation formats:
+📑 Bibliography Factory: Your one-stop citation format converter
+📊 CSV Processor: Smart book record validator and organizer
 
-IEEE format
-ACM format
-Nature Journal (NJ) format
+✨ Features
+📗 Bibliography Factory
 
+🔄 Triple-format conversion magic:
 
-Input validation with error handling
-Interactive file review system
-Multiple file processing capability
-
-CSV Book Processor
-
-Validates book records for:
-
-ISBN verification (10 and 13 digit)
-Price validation
-Year range checking (1995-2010)
+📌 IEEE format
+🎯 ACM format
+🌟 Nature Journal (NJ) format
 
 
-Categorizes books by genre into separate files
-Comprehensive error logging
-Exception handling for invalid data
+✅ Smart input validation
+🖥️ Interactive file review
+📦 Batch processing power
 
-Technical Details
-Main Components
+📘 CSV Book Processor
 
-BibliographyFactory.java: Main bibliography processing engine
-do_part_1.java: CSV processing and validation
-Custom Exception Classes:
+🔍 Smart Validation:
 
-invalidISBNException.java
-invalidPriceException.java
-invalidYearException.java
+📇 ISBN checker (10 & 13 digits)
+💰 Price validator
+📅 Year range guardian (1995-2010)
 
 
+📁 Auto-categorization by genre
+🚨 Comprehensive error tracking
+🛡️ Robust exception handling
 
-Input/Output
+🛠️ Technical Details
+🔧 Core Components
+javaCopy📂 Main Files:
+├── 🔮 BibliographyFactory.java
+├── 🎯 do_part_1.java
+└── 🚨 Exception Classes:
+    ├── invalidISBNException.java
+    ├── invalidPriceException.java
+    └── invalidYearException.java
+📥 Input/Output
+Copy📁 Input:
+├── 📑 .bib files (Bibliography)
+└── 📊 .csv files (Book records)
 
-Input Formats:
+📁 Output:
+├── 📋 .json files (Citations)
+├── 📊 .csv files (Categorized books)
+└── 📝 .txt files (Error logs)
+✅ Validation Rules
 
-Bibliography: .bib files
-Book records: .csv files
+📚 ISBN: Smart checksum validation
+💲 Price: Positive values only
+📅 Year: 1995-2010 range
+🎯 Format: Strict field validation
+
+🚀 Usage
+📚 Bibliography Generation
+bashCopyjava BibliographyFactory
+
+🎯 Processes all Latex*.bib files and creates formatted citations
+
+📊 CSV Processing
+bashCopyjava do_part_1
+
+🔄 Handles books1995.csv.txt with automatic categorization
+
+⚙️ Requirements
+
+☕ Java Development Kit (JDK)
+📁 Properly formatted input files
+💾 Adequate storage space
+
+🛡️ Error Handling
+
+🚫 Instant invalid file detection
+📝 Detailed error reporting
+🛠️ Smooth exception management
 
 
-Output Formats:
-
-Citations: .json files
-Categorized books: .csv files
-Error logs: .txt files
-
-
-
-Validation Rules
-
-ISBN: Checksum validation for both 10 and 13 digit formats
-Price: Must be positive
-Year: Must be between 1995-2010
-All fields must be properly formatted
-
-Usage
-Bibliography Generation
-javaCopyjava BibliographyFactory
-
-Program will process all Latex*.bib files in directory
-Creates corresponding IEEE, ACM, and NJ format files
-Allows review of generated files
-
-CSV Processing
-javaCopyjava do_part_1
-
-Processes books1995.csv.txt
-Creates genre-specific output files
-Generates Semantic.error.txt for validation errors
-
-Requirements
-
-Java Development Kit (JDK)
-Input files in correct format
-Sufficient disk space for output files
-
-Error Handling
-
-Invalid files are detected and reported
-Detailed error messages in Semantic.error.txt
-Graceful handling of file I/O exceptions
+🤝 Contributing
+Feel free to enhance this project! Open an issue or submit a pull request.
